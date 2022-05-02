@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#background {
+  background-image: url("background.jpg");
+  height: 700px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  width: 200px;
+  height: 200px;
+  background-color: #222327;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: inset -47px 49px 70px 20px #49474a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  color: white;
+}
+#button-opacity {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#button-border {
+  width: 250px;
+  height: 250px;
+  border: none;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, #4b494c 83%, #232428 91%);
+  position: absolute;
+  box-shadow: inset -8px 9px 60px 0px #232428,
+    7px -5px 0px -4px rgb(99, 98, 101), -50px 50px 50px -25px rgba(8, 8, 8, 1);
+}
+
+#button-chrom {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: none;
+  position: absolute;
+  border: 5px solid rgb(193, 193, 193);
+}
+
+span {
+  font-size: 1.6em;
+  color: #fcb922;
+}
