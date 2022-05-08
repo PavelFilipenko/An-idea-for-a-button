@@ -1,18 +1,37 @@
-const btn = document.getElementById("button"); //присваиваем переменной значение элемента html
 const btnOpacity = document.getElementById("button-opacity");
+const background = document.getElementById("background");
+const instagram = document.getElementById("instagram");
+const behance = document.getElementById("behance");
+const art = document.getElementById("art");
+const link = document.getElementById("link");
+const github = document.getElementById("github");
 
 btnOpacity.addEventListener("click", function handleClick() {
-  document.querySelector("span").style.fontSize = "100%";
-  document.querySelector("#button-chrom").style.border = "5px solid #115489";
-  btn.innerHTML = `<img src="instagram.png" height = 100px />`;
+  instagram.style.cssText = `
+   position: relative;
+   bottom: 10px;
+   right: -75px;
+   `;
+
+  behance.style.cssText = `
+   position: relative;
+   bottom: 150px;
+   `;
+
+  art.style.cssText = `
+   position: relative;
+   bottom: 200px;
+   `;
+
+  link.style.cssText = `
+   position: relative;
+   bottom: 150px;
+   `;
+
+  github.style.cssText = `
+   position: relative;
+   bottom: 10px;
+   right: 75px;
+   `;
 });
 
-/*btnOpacity.addEventListener("click", function handleClick() {
-  let initialText = `Contact <br /><span>me!</span>`;
-
-  if (btn.textContent.toLowerCase() == initialText.toLowerCase()) {
-    btn.innerHTML = `My <br /><span>instagram!</span>`;
-  } else {
-    btn.textContent = initialText;
-  }
-}); */
